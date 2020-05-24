@@ -1,0 +1,109 @@
+/*ALGEMEEN------------------------------------------------------------------------------------------*/
+.reveal .controls{
+  color: white;
+}
+
+section{
+  background-color: white;
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+  font-family: 'Arvo', serif;
+  position: relative;
+  border-radius: 5%;
+}
+
+.slides{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ body{
+   background-color: #CD1133;
+ }
+
+.titel{
+  color: white;
+  height: 7rem;
+  text-align: center;
+  z-index: 1;
+  font-size: 5rem;
+  font-family: sketchnote-square, sans-serif;
+  margin: 1rem auto;
+}
+
+ .streep{
+   height: 7rem;
+   position: absolute;
+   top: 2rem;
+   left: 20rem;
+   z-index: -1;
+ }
+
+ ::selection {
+  color: white;
+  background: #CD1133;
+}
+
+ /*SLIDE1*/
+#logo{
+   width: 100%;
+   margin-top: 6rem;
+ }
+
+ /*SLIDE2*/
+section:nth-child(2){
+  background-image: url("img/groep.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*SLIDE3*/
+
+p{
+  font-family: amatic-sc, sans-serif;
+  font-weight: 700;
+}
+
+#huis{
+  height: 30rem;
+  position: absolute;
+  top: 8rem;
+  left: 10rem;
+  z-index: -1;
+}
+
+#huistekst1{
+  font-size: 5rem;
+  position: absolute;
+  top: 21rem;
+  left: 35rem;
+}
+
+#huistekst2{
+  font-size: 5rem;
+  position: absolute;
+  top: 26rem;
+  left: 35rem;
+}
+
+#klok{
+  height: 20rem;
+  position: absolute;
+  bottom: 5rem;
+  right: 10rem;
+}
+
+#kloktekst1{
+  font-size: 5rem;
+  position: absolute;
+  bottom: 15rem;
+  right: 35rem;
+}
+
+#kloktekst2{
+  font-size: 5rem;
+  position: absolute;
+  bottom: 10rem;
+  right: 35rem;
+}
