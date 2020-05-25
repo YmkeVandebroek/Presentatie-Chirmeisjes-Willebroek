@@ -5,18 +5,18 @@
 		<link rel="stylesheet" href="reveal.css">
 		<link rel="stylesheet" href="reset_plus.css">
 		<link rel="stylesheet" href="stijl.css">
+		<!--Deze links verwijst naar stylesheets uit de JS-bibliotheek "reveal"-->
 		<link rel="stylesheet" href="https://use.typekit.net/ugp0qyp.css">
-		<!--De links verwijzen naar stylesheets uit de JS-bibliotheek "reveal"-->
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
+				<section data-transition="concave">
 					<video id="logo" src="video/logo.mp4" autoplay muted></video>
 				</section>
-				<section>
+				<section id="groepsfoto" data-transition="concave">
 				</section>
-				<section>
+				<section data-transition="zoom">
 					<img class="streep" src="img/streep.svg" alt="">
 					<div class="titel">Info</div>
 					<video id="klok" src="video/klok.mp4" autoplay muted loop></video>
@@ -26,9 +26,54 @@
 					<p id=kloktekst1>Elke dag vanaf 14u00</p>
 					<p id=kloktekst2>Voor meisjes van 6 tot 18 jaar</p>
 				</section>
-				<section>
+				<section data-transition="zoom-in-fade-out">
 					<img class="streep" src="img/streep.svg" alt="">
 					<div class="titel">Groepen</div>
+					<div class="buttons">
+						<button class="buttongroepen" type="button" name="button" data-info="6 tot 8 jaar: 14u tot 17u">Ribbels</button>
+						<button class="buttongroepen" type="button" name="button" data-info="9 tot 10 jaar: 14u tot 17u">Speelclub</button>
+						<button class="buttongroepen" type="button" name="button" data-info="11 tot 12 jaar: 14u tot 18u">Kwiks</button>
+						<button class="buttongroepen" type="button" name="button" data-info="13 tot 14 jaar: 14u tot 18u">Tippers</button>
+						<button class="buttongroepen" type="button" name="button" data-info="15 tot 16 jaar: 14u tot 19u">Tiptiens</button>
+						<button class="buttongroepen" type="button" name="button" data-info="17 tot 18 jaar: 14u tot 19u30">Aspiranten</button>
+					</div>
+					<p id="infogroepen">Druk op de groepen voor meer info!</p>
+				</section>
+				<section data-transition="concave">
+					<img class="streep" src="img/streep.svg" alt="">
+					<div class="titel">Steakfestijn</div>
+					<img id="Steakfestijnposter" src="img/steakfestijnposter.jpg" alt="">
+				</section>
+				<section class="RainbowTD" data-transition="concave">
+					<img class="streep" src="img/streep.svg" alt="">
+					<div class="titel">Rainbow TD</div>
+					<img class="poster" src="img/rainbowtdposter.jpg" alt="">
+					<div class="sfeer1"></div>
+					<div class="sfeer2"></div>
+				</section>
+				<section class="Kubb" data-transition="concave">
+					<img class="streep" src="img/streep.svg" alt="">
+					<div class="titel">Kubbtornooi</div>
+					<img class="poster" src="img/kubbtornooiposter.jpg" alt="">
+					<div class="sfeer1"></div>
+					<div class="sfeer2"></div>
+				</section>
+				<section id="kampvuur">
+				</section>
+				<section id="kampinfo"  data-transition="zoom">
+					<img class="streep" src="img/streep.svg" alt="">
+					<div class="titel">Kamp</div>
+					<div id="kampinfodelen">
+						<p class="fragment fade-right"><span>Wat?</span> Een geweldig kamp!</p>
+						<p class="fragment fade-left"><span>Wanneer?</span>Juni</p>
+						<p class="fragment fade-right"><span>Duur?</span>2 weken</p>
+						<p class="fragment fade-left"><span>Waar?</span>Elk jaar in Kasterlee</p>
+						<p class="fragment fade-right"><span>Wie?</span>Verschillende leiding</p>
+					</div>
+				</section>
+				<section id="einde">
+					<img class="streep" src="img/streep.svg" alt="">
+					<div class="titel">Tot snel!</div>
 				</section>
 		<script src="reveal.js"></script>
 		<script>
